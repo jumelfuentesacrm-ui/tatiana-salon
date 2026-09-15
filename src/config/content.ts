@@ -44,10 +44,6 @@ export interface SiteContent {
   hero_subtitle: string;
   hero_description: string;
 
-  // Estadisticas
-  stat_rating: string;
-  stat_clients: string;
-
   // Servicios
   services: ServiceBlurb[];
 
@@ -81,9 +77,6 @@ export const DEFAULT_CONTENT: SiteContent = {
   hero_subtitle: "Belleza con alma, arte con precisión",
   hero_description:
     "Especialistas en color, cortes y tratamientos capilares. Donde la técnica se une con el cuidado genuino.",
-
-  stat_rating: "5★",
-  stat_clients: "500+",
 
   services: [
     { title: "Blower", description: "Secado y peinado profesional para un cabello liso, brillante y con movimiento." },

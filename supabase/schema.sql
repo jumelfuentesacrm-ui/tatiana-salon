@@ -29,9 +29,6 @@ te espera',
   hero_subtitle text not null default 'Belleza con alma, arte con precisión',
   hero_description text not null default 'Especialistas en color, cortes y tratamientos capilares. Donde la técnica se une con el cuidado genuino.',
 
-  stat_rating text not null default '5★',
-  stat_clients text not null default '500+',
-
   services jsonb not null default '[]'::jsonb,
   gallery jsonb not null default '[]'::jsonb,
 

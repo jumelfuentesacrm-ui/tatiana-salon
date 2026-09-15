@@ -41,9 +41,6 @@ const SITE_CSS = `
 .ts-root .scroll-hint{position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,0.6)}
 .ts-root .scroll-hint svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5;animation:ts-bounce 2s infinite}
 @keyframes ts-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
-.ts-root .stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--warm-white);padding:1.6rem 1.5rem;border-bottom:1px solid var(--cream-dark)}
-.ts-root .stat-n{font-family:var(--fd);font-size:1.9rem;font-weight:300;color:var(--red);display:block;line-height:1;margin-bottom:0.3rem}
-.ts-root .stat-l{font-size:0.57rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--taupe)}
 .ts-root section{padding:4rem 1.5rem}
 .ts-root .sec-eye{font-size:0.6rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--red);font-weight:400;margin-bottom:1rem;display:flex;align-items:center;gap:0.8rem}
 .ts-root .sec-eye::before{content:'';display:block;width:20px;height:1px;background:var(--red)}
@@ -242,12 +239,6 @@ export default function PublicSite() {
           <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>
         </div>
       </section>
-
-      <div className="stats">
-        <div style={{ textAlign: "center" }}><span className="stat-n">{c.stat_rating}</span><span className="stat-l">Google</span></div>
-        <div style={{ textAlign: "center" }}><span className="stat-n">{c.stat_clients}</span><span className="stat-l">Clientes</span></div>
-        <div style={{ textAlign: "center" }}><span className="stat-n">PR</span><span className="stat-l">{c.city_line.split(",")[0]}</span></div>
-      </div>
 
       <section id="servicios">
         <div className="sec-eye">Lo que hacemos</div>

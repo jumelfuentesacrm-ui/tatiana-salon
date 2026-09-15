@@ -199,16 +199,6 @@ export default function Admin() {
             <label>Descripcion corta</label>
             <textarea value={form.hero_description} onChange={(e) => update("hero_description", e.target.value)} />
           </div>
-          <div className="admin-grid-2">
-            <div className="field">
-              <label>Numero grande (calificacion, ej. "5★")</label>
-              <input value={form.stat_rating} onChange={(e) => update("stat_rating", e.target.value)} />
-            </div>
-            <div className="field">
-              <label>Numero grande (clientes, ej. "500+")</label>
-              <input value={form.stat_clients} onChange={(e) => update("stat_clients", e.target.value)} />
-            </div>
-          </div>
         </section>
 
         <section className="admin-section">
